@@ -62,7 +62,7 @@ body{
 
 .hero h1{
 
-    font-family:'Playfair Display',serif;
+    font-family:'Cinzel',serif;
 
     font-size:4.2rem;
 
@@ -138,7 +138,7 @@ section h2{
 
     text-align:center;
 
-    font-family:'Playfair Display',serif;
+    font-family:'Cinzel',serif;
 
     font-size:2.5rem;
 
@@ -412,7 +412,7 @@ footer{
 
 footer h3{
 
-    font-family:'Playfair Display',serif;
+    font-family:'Cinzel',serif;
 
     margin-bottom:15px;
 
@@ -467,6 +467,55 @@ footer p{
 
     }
 
+}
+
+/* ===========================
+   FAQ
+=========================== */
+
+.faq {
+    background: #f8fafc;
+}
+
+.faq-item {
+    background: white;
+    border-radius: 12px;
+    padding: 20px;
+    margin-bottom: 15px;
+    box-shadow: 0 8px 20px rgba(0,0,0,.05);
+    transition: all .3s ease;
+}
+
+.faq-item:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 12px 25px rgba(0,0,0,.08);
+}
+
+.faq-item summary {
+    cursor: pointer;
+    font-weight: 600;
+    color: #07142a;
+    list-style: none;
+}
+
+.faq-item summary::-webkit-details-marker {
+    display: none;
+}
+
+.faq-item summary::after {
+    content: "+";
+    float: right;
+    font-size: 1.3rem;
+    color: #d4af37;
+}
+
+.faq-item[open] summary::after {
+    content: "−";
+}
+
+.faq-item p {
+    margin-top: 15px;
+    color: #666;
 }
 
 /* ===========================
